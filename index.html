@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./src/assets/download.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header container">
+      <nav>
+        <ul class="header__menu">
+          <li>
+            <a class="header__link" href="#about">About</a>
+          </li>
+          <li>
+            <a class="header__link" href="#featured">Work</a>
+          </li>
+          <li>
+            <a class="header__link" href="#contact">Contact</a>
+          </li>
+          <li class="header__line"></li>
+          <li>
+            <button class="header__sun">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a href="#" class="header__resume btn">Resume</a>
+          </li>
+        </ul>
+        <button class="header__bars">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <!-- Hero -->
+      <section class="hero container">
+        <img
+          src="./src/assets/download.png"
+          alt="profile pic"
+          class="hero__img"
+        />
+        <h2 class="hero__subtitle">Hi, I'm Erdenegarav &#128075;</h2>
+        <h1 class="hero__title">JUNIOR FRONT-END <br />WEB DEVELOPER</h1>
+        <p class="hero__description">
+          I'm passionate about becoming a
+          <strong class="hero__highlight">Fullstack web developer</strong>,
+          currently focusing on enhancing my
+          <strong class="hero__highlight">Frontend development skills</strong>.
+          I enjoy learning new things.
+        </p>
+        <a href="#" class="btn hero__btn">Reach Out</a>
+      </section>
+      <!-- About -->
+      <section class="about container section">
+        <div class="about__content container">
+          <h2 class="about__title" id="about">About</h2>
+          <p class="about__description">
+            Hello! I'm<span class="about__hightlight_rose">
+              Erdenegarav Ochirsukh</span
+            >, a
+            <strong class="about__highlight"
+              >passionate junior software engineer</strong
+            >
+            focused on becoming a<strong class="about__highlight">
+              skilled fullstack developer</strong
+            >. I thrive on creating responsive and dynamic user interfaces, with
+            a keen eye for detail and a strong love for front-end development.
+            My journey in tech began recently, but I'm constantly learning and
+            evolving, driven by an
+            <strong class="about__highlight"
+              >obsession with mastering new technologies </strong
+            >and solving complex problems.
+          </p>
+          <p class="about__description">
+            I have experience working with technologies like
+            <strong class="about__highlight">
+              HTML, CSS, JavaScript, ReactJS, and TailwindCSS </strong
+            >. I enjoy crafting websites that not only look great on all devices
+            but also offer a seamless user experience.
+          </p>
+          <p class="about__description">
+            Currently, I'm focused on
+            <strong class="about__highlight">
+              expanding my skill set to become a fullstack developer</strong
+            >, continuously improving my knowledge of frontend technologies. I
+            believe in the power of persistence, and I approach every challenge
+            with<strong class="about__highlight"> creativity</strong> and a
+            desire to grow.
+          </p>
+          <p class="about__description">
+            In my free time, you can find me
+            <strong class="about__highlight">
+              diving into new programming concepts</strong
+            >, exploring the latest web design trends, or working on personal
+            projects to push my limits. I'm excited about the future of web
+            development and look forward to
+            <strong class="about__highlight">
+              contributing to innovative projects</strong
+            >
+            that make a real impact.
+          </p>
+          <p class="about__description">
+            <strong class="about__hightlight_rose"
+              >Let's build something great together!</strong
+            >
+          </p>
+          <hr class="about__hr" />
+          <h3 class="about__subtitle">Technologies</h3>
+          <div class="about__ul_container">
+            <ul class="about__ul">
+              <li class="about__list">HTML</li>
+              <li class="about__list">CSS</li>
+              <li class="about__list">Javascript</li>
+            </ul>
+            <ul class="about__ul">
+              <li class="about__list">ReactJS</li>
+              <li class="about__list">TailwindCSS</li>
+            </ul>
+          </div>
+        </div>
+        <div class="container about__image_wrapper">
+          <img
+            class="about__image"
+            src="./src/assets/download.png"
+            alt="profile"
+          />
+        </div>
+      </section>
+      <!-- Projects -->
+      <section class="work container section">
+        <h2 class="work__title">Projects</h2>
+        <h2 class="work__subtitle">DevPeak</h2>
+        <p class="work__description">
+          DevPeak is a comprehensive question-and-answer platform designed
+          specifically for developers to ask, answer, and discuss programming
+          challenges across various technologies.
+        </p>
+        <div class="work__image-container">
+          <div class="work__image-wrapper">
+            <img
+              src="./src/assets/index.png"
+              alt="DevPeak index page"
+              class="work__images"
+            />
+          </div>
+          <div class="work__image-wrapper">
+            <img
+              src="./src/assets/login.png"
+              alt="DevPeak login page"
+              class="work__images"
+            />
+          </div>
+          <div class="work__image-wrapper">
+            <img
+              src="./src/assets/register.png"
+              alt="DevPeak register page"
+              class="work__images"
+            />
+          </div>
+          <div class="work__image-wrapper">
+            <img
+              src="./src/assets/q&A.png"
+              alt="DevPeak posts"
+              class="work__images"
+            />
+          </div>
+          <div class="work__image-wrapper">
+            <img
+              src="./src/assets/add question.png"
+              alt="DevPeak add question page"
+              class="work__images"
+            />
+          </div>
+          <div class="work__image-wrapper">
+            <img
+              src="./src/assets/profile.png"
+              alt="DevPeak profile page"
+              class="work__images"
+            />
+          </div>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <div class="underconstruction">
+        This website is in underconstruction &#8987;
+      </div>
+    </main>
+    <footer></footer>
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
