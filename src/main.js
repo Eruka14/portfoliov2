@@ -7,3 +7,11 @@ import "./styles/about.css";
 import "./styles/work.css";
 import "./styles/contact.css";
 import "./styles/footer.css";
+import "./styles/mobilemenu.css";
+
+import mobileNav from "./utils/mobile-nav";
+import darkMode from "./utils/dark-mode";
+import lazyLoading from "./utils/lazy-loading";
+mobileNav();
+darkMode();
+lazyLoading();

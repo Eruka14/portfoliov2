@@ -25,7 +25,7 @@
           </li>
           <li class="header__line"></li>
           <li>
-            <button class="header__sun">
+            <button class="header__sun" id="theme-toggle">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -64,6 +64,44 @@
         </button>
       </nav>
     </header>
+    <!-- Mobile navigation -->
+    <div class="mobile__nav">
+      <nav>
+        <ul class="mobile__nav-menu">
+          <li>
+            <a href="#" class="mobile__nav-link">About</a>
+          </li>
+          <li>
+            <a href="#" class="mobile__nav-link">Work</a>
+          </li>
+          <li>
+            <a href="#" class="mobile__nav-link">Contact</a>
+          </li>
+          <li class="mobile__nav-line"></li>
+          <li>
+            <button class="mobile__nav-sun" id="theme-toggle">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"
+                />
+              </svg>
+            </button>
+          </li>
+          <li>
+            <a href="#" class="mobile__nav-btn btn">Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- End of Mobile navigation -->
     <main>
       <!-- Hero -->
       <section class="hero container">
@@ -153,8 +191,9 @@
         </div>
         <div class="container about__image_wrapper">
           <img
-            class="about__image"
-            src="./src/assets/download.png"
+            class="about__image lazy loading"
+            src="https://fakeimg.pl/218x231"
+            data-src="./src/assets/download.png"
             alt="profile"
           />
         </div>
@@ -171,50 +210,56 @@
         <div class="work__image-container">
           <div class="work__image-wrapper">
             <img
-              src="./src/assets/index.png"
+              src="https://fakeimg.pl/1920x887"
+              data-src="./src/assets/index.png"
               alt="DevPeak index page"
-              class="work__images"
+              class="work__images lazy loading"
             />
           </div>
           <div class="work__image-wrapper">
             <img
-              src="./src/assets/login.png"
+              src="https://fakeimg.pl/1920x886"
+              data-src="./src/assets/login.png"
               alt="DevPeak login page"
-              class="work__images"
+              class="work__images lazy loading"
             />
           </div>
           <div class="work__image-wrapper">
             <img
-              src="./src/assets/register.png"
+              src="https://fakeimg.pl/1920x886"
+              data-src="./src/assets/register.png"
               alt="DevPeak register page"
-              class="work__images"
+              class="work__images lazy loading"
             />
           </div>
           <div class="work__image-wrapper">
             <img
-              src="./src/assets/q&A.png"
+              src="https://fakeimg.pl/1920x886"
+              data-src="./src/assets/q&A.png"
               alt="DevPeak posts"
-              class="work__images"
+              class="work__images lazy loading"
             />
           </div>
           <div class="work__image-wrapper">
             <img
-              src="./src/assets/add question.png"
+              src="https://fakeimg.pl/1920x887"
+              data-src="./src/assets/add question.png"
               alt="DevPeak add question page"
-              class="work__images"
+              class="work__images lazy loading"
             />
           </div>
           <div class="work__image-wrapper">
             <img
-              src="./src/assets/profile.png"
+              src="https://fakeimg.pl/1920x887"
+              data-src="./src/assets/profile.png"
               alt="DevPeak profile page"
-              class="work__images"
+              class="work__images lazy loading"
             />
           </div>
         </div>
       </section>
       <section class="contact container section">
-        <h2 class="contact__title">Get in Contact</h2>
+        <h2 class="contact__title" id="contact">Get in Contact</h2>
         <p class="contact__description">
           I'm always excited to connect with fellow developers, potential
           collaborators, or anyone interested in my work. Whether you have a
