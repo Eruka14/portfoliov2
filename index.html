@@ -106,9 +106,11 @@
       <!-- Hero -->
       <section class="hero container">
         <img src="/download.png" alt="profile pic" class="hero__img" />
-        <h2 class="hero__subtitle">Hi, I'm Erdenegarav &#128075;</h2>
-        <h1 class="hero__title">JUNIOR FRONT-END <br />WEB DEVELOPER</h1>
-        <p class="hero__description">
+        <h2 class="hero__subtitle">Hi, I'm <span id="hero__name"></span></h2>
+        <h1 class="hero__title" id="hero__title-animation">
+          JUNIOR FRONT-END <br />WEB DEVELOPER
+        </h1>
+        <p class="hero__description" id="hero__description-animation">
           I'm passionate about becoming a
           <strong class="hero__highlight">Fullstack web developer</strong>,
           currently focusing on enhancing my
@@ -121,7 +123,7 @@
       </section>
       <!-- About -->
       <section class="about container section">
-        <div class="about__content container">
+        <div class="about__content container" id="about__content-animation">
           <h2 class="about__title" id="about">About</h2>
           <p class="about__description">
             Hello! I'm<span class="about__hightlight_rose">
@@ -198,9 +200,9 @@
       </section>
       <!-- Projects -->
       <section class="work container section">
-        <h2 class="work__title" id="featured">Projects</h2>
-        <h2 class="work__subtitle">DevPeak</h2>
-        <p class="work__description">
+        <h2 class="work__title work__animation" id="featured">Projects</h2>
+        <h2 class="work__subtitle work__animation">DevPeak</h2>
+        <p class="work__description work__animation">
           DevPeak is a comprehensive question-and-answer platform designed
           specifically for developers to ask, answer, and discuss programming
           challenges across various technologies.
@@ -256,7 +258,7 @@
           </div>
         </div>
       </section>
-      <section class="contact container section">
+      <section class="contact container section" id="contact__animation">
         <h2 class="contact__title" id="contact">Get in Contact</h2>
         <p class="contact__description">
           I'm always excited to connect with fellow developers, potential
